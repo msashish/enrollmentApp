@@ -7,12 +7,18 @@ Simple webapp using flask microframework that enrolls people for some courses.
 |-- application
 |   |-- __init__.py
 |   |-- routes.py
+|   |-- forms.py
+|   |-- models.py
 |   |-- static
-|   `-- templates
+|       |-- css
+|       |-- images
+|   |-- templates
+|       |-- html files
+|-- .flaskenv
 |-- config.py
 |-- main.py
 |-- requirements.txt
-`-- venv
+|-- venv
 ```
 
 # How to run

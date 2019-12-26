@@ -3,13 +3,24 @@
 {% block content %}
     <div class="row">
         <div class="col-md-12 text-center">
-            <h1>Welcome to basic Learning App</h1>
+            <h1>Welcome to basic learning App</h1>
 
-            {% if login %}
-            <h3>Let's get started.</h3>
+            {% if session['user_id'] %}
+                <h3>Let's get started.</h3><br>
             {% else %}
-            <p>Already registered? <a href="{{url_for('login')}}">Login</a></p>
+                <p>Already registered? <a href="{{url_for('login')}}">Login</a></p>
             {% endif %}
+
+            <div style="text-align:left;">
+                <h2>Cool facts about other species you probably did not know </h2><br>
+                <p> 1) Giraffes have no vocal chords.</p>
+                <p> 2) Nearly three percent of the ice in Antarctic glaciers is penguin urine.</p>
+                <p> 3) It takes a sloth two weeks to digest its food.</p>
+                <p> 4) Pigeons can do math.</p>
+                <p> 5) Zebra stripes act as a natural bug repellant.</p>
+                <p> 6) The fingerprints of a koala are so indistinguishable from humans that they have on occasion been confused at a crime scene. And they sleep up to 22 hours a day.</p>
+                <br>
+            </div>
         </div>
     </div>
 
